@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Registration Form</title>
+</head>
+<body style="margin-top: auto; margin-right: auto; margin-left: auto; margin-bottom:auto; height: 100%; background-color: beige;">
+    <section>
+        <h1>Arusha Trip Registration Form</h1>
+        <h3>Fill in Your Details:</h3>
+        <form action="submit.php">
+            <fieldset>
+        <fieldset><legend>Personal information</legend>
+        
+            <label for="FN">First Name</label><br><input type="text" name="name" placeholder="Your First Name" id="FN">
+        </fieldset>
+        <fieldset>
+            <label for="LN">Last Name</label><br><input type="text" name="name" placeholder="Your Last name" id="LN">
+        </fieldset>
+        <fieldset>
+            <label for="EM">Email</label><br><input type="email" name="email" placeholder="Your Email" id="EM">
+        </fieldset>
+        <fieldset>
+            <label for="ID">Student ID</label><br><input type="text" name="ID" placeholder="Your Student ID" id="ID">
+        </fieldset>
+        <fieldset>
+            <label for="no">Phone Number</label><br>
+            <input type="tel" id="no">
+        </fieldset>
+        <fieldset>
+            <legend>Gender</legend>
+            <input id="male" type="radio" name="gender" value="male"> <label for="male">Male</label>
+            <input id="female" type="radio" name="gender" value="female"> <label for="female">Female</label>
+            <input id="non-binary" type="radio" name="gender" value="non-binary"> <label for="non-binary">Non-Binary</label>
+
+        </fieldset>
+        <fieldset>
+            <label for="dob">Date of Birth</label><br>
+            <input type="date" id="dob" name="dob">
+        </fieldset>
+        <fieldset>
+            <input type="file" type="image" id="file">
+            <label for="file">Passport Photo</label><br>
+            
+        </fieldset>
+        <fieldset>
+            <label for="school">Your School</label><br>
+            <select name="school" id="school">
+                <option>Choose your School</option>
+                <option value="SCS">School of Computing Sciences</option>
+                <option value="SOB">School of Business</option>
+                <option value="SIRD">School of International Relations and Diplomacy</option>
+                <option value="RLS">Riara Law School</option>
+                <option value="SCMJ">School of Communication and Multimedia Journalism</option>
+                <option value="SOE">School of Education</option>
+            </select>            
+        </fieldset>
+        <fieldset>
+            <legend>Select main area of interest</legend>
+            <input  type="checkbox" id="kikuletwa" name="choice" value="kikuletwa"><label for="kikuletwa">Kikuletwa hotsprings</label>&emsp;
+            <input type="checkbox" id="EAC" name="Choice" value="EAC Offices"><label for="EAC">EAC offices</label>&emsp;
+            <input type="checkbox" id="KC" name="Choice" value="Kenya consulate"><label for="KC">Kenya consulate</label>&emsp;
+            <input type="checkbox" id="Mt," name="Choice" value="Mt. Kilimanjaro"><label for="Mt.">Mt. Kilimanjaro</label>
+        </fieldset>
+        <fieldset>
+            <label for="Nat">Nationality</label><br>
+            <input type="text" id="Nat">
+        </fieldset>
+    </fieldset>
+        <fieldset>
+            <label for="payment">Enter Payment Method</label><br>
+            <input list="payment methods" name="payment method" id="payment">
+            <datalist id="payment methods">
+                <option value="Bank Transfer">
+                <option value="Mpesa Paybill">
+                <option value="Credit/Debit Card">
+                <option value="Banker's Cheque">
+                <option value="Cash">
+            </datalist>
+        </fieldset>
+        
+        <fieldset>
+            <label for="explain">What do you expect to learn from this trip?</label><br>
+            <textarea id="explain" rows="3" cols="33"></textarea>
+         </fieldset>
+         <fieldset>
+            <legend>Process Information</legend>
+            <input type="submit" value="Click to Submit your Details">
+            <div style="text-align: right;">
+            <input type="reset" value="Clear the Form" class="right">
+            </div>
+            
+        </fieldset> 
+        </form>
+    </section>
+</body>
+</html>
